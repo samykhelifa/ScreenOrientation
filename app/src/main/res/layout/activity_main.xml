@@ -44,6 +44,7 @@
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:text="New RadioButton" />
 
 </LinearLayout>
