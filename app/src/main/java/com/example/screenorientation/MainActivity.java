@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Welcome " + editText.getText().toString());
             }
         });
+
     }
 
     @Override
@@ -50,11 +51,12 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
 
         Log.i(TAG, "onRestoreInstanceState()");
-
         if (savedInstanceState != null) {
             btn.setText(savedInstanceState.getString(KEY_BTN_TEXT));
             textView.setText(savedInstanceState.getString(KEY_MESSAGE));
         }
+
+
     }
 
     @Override
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.i(TAG, "onStart()");
+
     }
 
     @Override
